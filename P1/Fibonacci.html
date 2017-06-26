@@ -5,21 +5,21 @@
      <title>输出Fibonacci前一百项</title>
 </head>
 <body> 
-    <script type="text/javascript">
+     <script type="text/javascript">
      var loop,number=[];
      number[0]=number[1]=1;  
      for(loop=0;loop<100;loop++){   
          if(loop%4==0&&loop!=0){ 
               document.write("<br/>"); 
           }  
-         if (loop<2) {   
-         document.write(number[loop]+",&nbsp&nbsp&nbsp&nbsp");  
+         if(loop<2){   
+              document.write(number[loop]+",");  
           }  
-          else{    
-          number[loop]=number[loop-2]+number[loop-1];   
-          document.write(number[loop]+",&nbsp&nbsp&nbsp&nbsp");   
+         else{    
+              number[loop]=number[loop-2]+number[loop-1];   
+              document.write(number[loop]+",");   
           }  
-       }
+      }
 </script>
 </body>
 </html>
